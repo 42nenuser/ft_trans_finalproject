@@ -1,40 +1,15 @@
-# Dependencies
-node_modules
-npm-debug.log
-yarn-error.log
-
-# Build output
-dist
-build
-
-# Version control
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+venv
+*.sqlite3
 .git
 .gitignore
-
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Editor directories and files
-.idea
-.vscode
-*.swp
-*.swo
-
-# OS generated files
+.dockerignore
+Dockerfile
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Testing
-coverage
-
-# Misc
+.env
 *.log
