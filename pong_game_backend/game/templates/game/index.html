@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div id="app">
+        <div id="player-form">
+            <h1>Pong Game</h1>
+            <form id="create-players-form">
+                <input type="text" id="player1-name" placeholder="Player 1 Name" required>
+                <input type="text" id="player2-name" placeholder="Player 2 Name" required>
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <canvas id="pong-canvas" width="600" height="400"></canvas>
+            <div id="score-display">
+                <span id="player1-score">0</span> - <span id="player2-score">0</span>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-message"></div>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/playerSetup.js' %}"></script>
+    <script src="{% static 'js/gameLogic.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
