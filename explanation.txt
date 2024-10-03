@@ -103,12 +103,5 @@ This file acts as the main controller for your SPA. It includes:
 - Single-page application structure for seamless user experience
 - Error handling for duplicate usernames and other potential issues
 
-6. Potential Improvements:
-
-- Leaderboard functionality
-- More detailed game statistics
-- Responsive design for mobile play
-- Sound effects and animations
-- In-game chat or emotes
 
 This roadmap creates a fully functional, database-backed Pong game with a clean separation between frontend and backend, following modern web development practices. The use of Django and Django Rest Framework for the backend provides a robust, scalable foundation, while the frontend's modular JavaScript structure allows for easy maintenance and future enhancements.
